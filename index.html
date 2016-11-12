@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
-  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <link rel="stylesheet" href="libraries/highlighters/prettify/css/tomorrow.css" />
   <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
 
   
@@ -54,42 +54,62 @@
 
 <!-- Limit image width and height -->
 
-<style type='text/css'>
-img {
-    max-height: 560px;
-    max-width: 964px;
+<style type="text/css">
+img {     
+  max-height: 560px;     
+  max-width: 964px; 
 }
 </style>
-
-<!-- Center image on slide -->
-
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
-
-<script type='text/javascript'>
-$(function() {
-    $("p:has(img)").addClass('centered');
-});
-</script>
+ 
 
 <h2>Slide 1 - Questão 1[6.57]</h2>
 
-<p>Problema:</p>
+<p><font color="red">Problema</font> »
+<br>
+<br>
+<center><img src="./assets/img/0prob.png" align="middle"></center>
+<br></p>
 
-<p><img src="./assets/img/0prob.png" alt="width"></p>
-
-<p><img src="./assets/img/10PL.png" alt="width"></p>
+<p><center><img src="./assets/img/10PL.png" align="middle">
+</center></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-2" style="background:;">
   <hgroup>
-    <h2>Slide 2 - A) Problema Dual associado e interpretação</h2>
+    <h2>Slide 2 - Problema Dual Associado</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="./assets/img/11dual1.png" alt="width"></p>
+    <p><font color="red">Situação fictícia</font>/ Interpretação »</p>
 
+<div style='float:left;width:48%;' class='centered'>
+  <!-- controlando o tamnho da fonte em css para html5 -->
+
+<p style="font-size:17px">
+(P.D) 
+$$Min \phi = 5000\lambda_1 + 80000\lambda_2 + 500 \lambda_3$$
+s.a. 
+$$6\lambda_1 + 100\lambda_2 + \lambda3 \geq 60 $$
+$$8\lambda_1 + 150\lambda_2 + \lambda3 \geq 100 $$
+$$10\lambda_1 + 120\lambda_2 + \lambda3 \geq 80 $$
+$$\lambda_i \geq 0 $$
+</p>
+
+<p><br></p>
+
+<p><center><img src="./assets/img/11dual1.png" align="middle">
+</center></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><br></p>
+
+<p><center><img src="./assets/img/arrendamento2.png" align="middle">
+</center></p>
+
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -262,7 +282,7 @@ $(function() {
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2 - A) Problema Dual associado e interpretação'>
+        data-slide=2 title='Slide 2 - Problema Dual Associado'>
          2
       </a>
     </li>
@@ -354,9 +374,29 @@ $(function() {
 </body>
   <!-- Load Javascripts for Widgets -->
   
-  <!-- LOAD HIGHLIGHTER JS FILES -->
-  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
-   
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- Google Prettify -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+  <script src='libraries/highlighters/prettify/js/lang-r.js'></script>
+  <script>
+    var pres = document.getElementsByTagName("pre");
+    for (var i=0; i < pres.length; ++i) {
+      pres[i].className = "prettyprint linenums";
+    }
+    prettyPrint();
+  </script>
+  <!-- End Google Prettify --> 
   </html>

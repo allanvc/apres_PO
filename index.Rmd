@@ -3,14 +3,14 @@ title       : Trabalho - Pesquisa Operacional 1
 subtitle    : Grupo 2
 author      : Allan Vieira; Akane; Luana; Olivia Ziller
 job         : 
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
+framework   : io2012       # {io2012, html5slides, shower, dzslides, ...}
+highlighter : prettify  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : []
+widgets     : [mathjax]
 mode        : selfcontained # {standalone, draft}
 github:
   user:allanvc
-  repo:Trab_PO
+  repo:pres_PO
 
 --- 
 <style>
@@ -20,37 +20,50 @@ github:
 </style>
 
 <!-- Limit image width and height -->
-<style type='text/css'>
-img {
-    max-height: 560px;
-    max-width: 964px;
+<style type="text/css">
+img {     
+  max-height: 560px;     
+  max-width: 964px; 
 }
 </style>
-
-<!-- Center image on slide -->
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
-<script type='text/javascript'>
-$(function() {
-    $("p:has(img)").addClass('centered');
-});
-</script>
+ 
 
 ## Slide 1 - Questão 1[6.57]
 
-Problema:
-
-![width](./assets/img/0prob.png)
-
-
-![width](./assets/img/10PL.png)
-
-
---- .class #id 
-
-## Slide 2 - A) Problema Dual associado e interpretação
+<font color="red">Problema</font> »
+<br>
+<br>
+<center><img src="./assets/img/0prob.png" align="middle"></center>
+<br>
+<p><center><img src="./assets/img/10PL.png" align="middle">
+</center></p>
 
 
-![width](./assets/img/11dual1.png)
+--- &twocol 
+
+## Slide 2 - Problema Dual Associado
+<font color="red">Situação fictícia</font>/ Interpretação »
+
+*** =left
+<!-- controlando o tamnho da fonte em css para html5 -->
+<p style="font-size:17px">
+(P.D) 
+$$Min \phi = 5000\lambda_1 + 80000\lambda_2 + 500 \lambda_3$$
+s.a. 
+$$6\lambda_1 + 100\lambda_2 + \lambda3 \geq 60 $$
+$$8\lambda_1 + 150\lambda_2 + \lambda3 \geq 100 $$
+$$10\lambda_1 + 120\lambda_2 + \lambda3 \geq 80 $$
+$$\lambda_i \geq 0 $$
+</p>
+
+<br>
+<p><center><img src="./assets/img/11dual1.png" align="middle">
+</center></p>
+
+*** =right
+<br>
+<p><center><img src="./assets/img/arrendamento2.png" align="middle">
+</center></p>
 
 --- .class #id 
 
