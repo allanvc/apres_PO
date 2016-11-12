@@ -33,11 +33,15 @@ img {
 <font color="red">Problema</font> »
 <br>
 <br>
-<center><img src="./assets/img/0prob.png" align="middle"></center>
-<br>
-<p><center><img src="./assets/img/10PL.png" align="middle">
-</center></p>
 
+
+
+
+|LAVOURA | TRABALHADORES.DIA| CAPITAL| LUCRO|
+|:-------|-----------------:|-------:|-----:|
+|Trigo   |                 6|     100|    60|
+|Milho   |                 8|     150|   100|
+|Soja    |                10|     120|    80|
 
 --- &twocol 
 
@@ -56,9 +60,6 @@ $$10\lambda_1 + 120\lambda_2 + \lambda3 \geq 80 $$
 $$\lambda_i \geq 0 $$
 </p>
 
-<br>
-<p><center><img src="./assets/img/11dual1.png" align="middle">
-</center></p>
 
 *** =right
 <br>
