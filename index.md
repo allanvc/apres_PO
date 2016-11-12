@@ -157,9 +157,6 @@ b) Cont. variáveis básicas
 
 ## Slide 14 - Preços-sombra
 
-\\n
-\\n
-\\n
 
 ![width](./assets/img/30precos_sombra.png)
 
