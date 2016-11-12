@@ -46,20 +46,38 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <article data-timings="">
-    <p>//alterando cor do slide</p>
-
-<style>
+    <style>
 .title-slide {
   background-color: #FFFFFF; /* #EDE0CF; ; #CA9F9D*/
 }
 </style>
 
+<!-- Limit image width and height -->
+
+<style type='text/css'>
+img {
+    max-height: 560px;
+    max-width: 964px;
+}
+</style>
+
+<!-- Center image on slide -->
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+
+<script type='text/javascript'>
+$(function() {
+    $("p:has(img)").addClass('centered');
+});
+</script>
+
 <h2>Slide 1 - Questão 1[6.57]</h2>
 
-<ol>
-<li><p>Apresentar/ analisar alguns indicadores para os mesmos anos</p></li>
-<li><p>Comparar as projecoes Ripsa vs IBGE para o intervalo de anos 2010-2030</p></li>
-</ol>
+<p>Problema:</p>
+
+<p><img src="./assets/img/0prob.png" alt="width"></p>
+
+<p><img src="./assets/img/10PL.png" alt="width"></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -67,16 +85,166 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 6 - Projeções</h2>
+    <h2>Slide 2 - A) Problema Dual associado e interpretação</h2>
   </hgroup>
   <article data-timings="">
-    <p>teste</p>
+    <p><img src="./assets/img/11dual1.png" alt="width"></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-3" style="background:;">
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Slide 3 - B) Análise de Sensibilidade</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Tablô incial e Solução ótima do (PL):</p>
+
+<p><img src="./assets/img/11tablo_inicial.png" alt="width"></p>
+
+<p><img src="./assets/img/12tablo_otimo_orig.png" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Slide 4 - Alteração Parâmetro &quot;c&quot;</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>a) Variáveis não-básicas:</p>
+
+<p><img src="./assets/img/21sens_c1.png" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Slide 5 - Alteração Parâmetro &quot;c&quot;</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>a)Cont. variáveis não-básicas:</p>
+
+<p><img src="./assets/img/21sens_c1_sol.png" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Slide 6 - Alteração Parâmetro &quot;c&quot;</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>b) Variáveis básicas</p>
+
+<p><img src="./assets/img/22sens_c2.png" alt="width"></p>
+
+<p><img src="./assets/img/22sens_c2_2.png" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Slide 7 - Alteração Parâmetro &quot;c&quot;</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>b) Cont. variáveis básicas</p>
+
+<p><img src="./assets/img/22sens_c2_sol.png" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Slide 8 - Alteração Parâmetro &quot;b&quot;</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/23sens_b1.png" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Slide 9 - Cont. Alteração Parâmetro &quot;b&quot;</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/23sens_b_sol.png" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Slide 10 - Acréscimo de atividade</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/24sens_xp1.png" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Slide 11 - Cont. Acréscimo de atividade</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/24sens_xp_sol.png" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Slide 12 - Acréscimo de restrição</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/25sens_RT1.png" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Slide 13 - Cont. Acréscimo de restrição</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/25sens_RTsol.png" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Slide 14 - Preços-sombra</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>\n
+\n
+\n</p>
+
+<p><img src="./assets/img/30precos_sombra.png" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
   <hgroup>
     <h2>OBRIGADO!!!!</h2>
   </hgroup>
@@ -98,14 +266,86 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 6 - Projeções'>
+        data-slide=2 title='Slide 2 - A) Problema Dual associado e interpretação'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='OBRIGADO!!!!'>
+        data-slide=3 title='Slide 3 - B) Análise de Sensibilidade'>
          3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Slide 4 - Alteração Parâmetro &quot;c&quot;'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Slide 5 - Alteração Parâmetro &quot;c&quot;'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Slide 6 - Alteração Parâmetro &quot;c&quot;'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Slide 7 - Alteração Parâmetro &quot;c&quot;'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Slide 8 - Alteração Parâmetro &quot;b&quot;'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Slide 9 - Cont. Alteração Parâmetro &quot;b&quot;'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Slide 10 - Acréscimo de atividade'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Slide 11 - Cont. Acréscimo de atividade'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Slide 12 - Acréscimo de restrição'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Slide 13 - Cont. Acréscimo de restrição'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Slide 14 - Preços-sombra'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='OBRIGADO!!!!'>
+         15
       </a>
     </li>
   </ul>
