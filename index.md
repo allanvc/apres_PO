@@ -12,7 +12,8 @@ github:
   user:allanvc
   repo:pres_PO
 
---- 
+--- &twocol <!--- jah vao comecar o primeiro slide dividindo em 2 col --->
+
 <style>
 .title-slide {
   background-color: #FFFFFF; /* #EDE0CF; ; #CA9F9D*/
@@ -43,6 +44,32 @@ img {
 |Milho   |                 8|     150|   100|
 |Soja    |                10|     120|    80|
 
+*** =left
+<br>
+<br>
+<p style="font-size:15px">
+(P.L.) 
+$$Max Z = 60x_1 + 100x_2 + 80x_3$$
+s.a. 
+$$6x_1 + 8x_2 + 10x_3 \leq 5000 $$
+$$100x_1 + 150x_2 + 120x_3 \leq 80000 $$
+$$x_1 + x_2 + x_3 \leq 500 $$
+$$x_i \geq 0, i=1,2,3 $$
+</p>
+
+*** =right
+<br>
+<br>
+<p style="font-size:15px">
+(P.L.) 
+$$Max Z = 60x_1 + 100x_2 + 80x_3$$
+s.a. 
+$$6x_1 + 8x_2 + 10x_3 +x_4 = 5000 $$
+$$100x_1 + 150x_2 + 120x_3    +x_5 = 80000 $$
+$$x_1 + x_2 + x_3     +x_6 = 500 $$
+$$x_i \geq 0, i=1,2,3 $$
+</p>
+
 --- &twocol 
 
 ## Slide 2 - Problema Dual Associado
@@ -51,12 +78,12 @@ img {
 *** =left
 <!-- controlando o tamnho da fonte em css para html5 -->
 <p style="font-size:17px">
-(P.D) 
+(P.D.) 
 $$Min \phi = 5000\lambda_1 + 80000\lambda_2 + 500 \lambda_3$$
 s.a. 
-$$6\lambda_1 + 100\lambda_2 + \lambda3 \geq 60 $$
-$$8\lambda_1 + 150\lambda_2 + \lambda3 \geq 100 $$
-$$10\lambda_1 + 120\lambda_2 + \lambda3 \geq 80 $$
+$$6\lambda_1 + 100\lambda_2 + \lambda_3 \geq 60 $$
+$$8\lambda_1 + 150\lambda_2 + \lambda_3 \geq 100 $$
+$$10\lambda_1 + 120\lambda_2 + \lambda_3 \geq 80 $$
 $$\lambda_i \geq 0 $$
 </p>
 
@@ -81,12 +108,44 @@ Tablô incial e Solução ótima do (PL):
 
 
 ## Slide 4 - Alteração Parâmetro "c"
+<font color="red">Variáveis não-básicas</font>/ »
+<br>
+<br>
+$$c_1 = 60 \rightarrow c'_1=150 $$
 
-a) Variáveis não-básicas:
+Verificando o "range":
+<br>
+$$
+\begin{equation}
+  c_{B}B^{-1}a_1 - c_1 =
+     =\begin{bmatrix}
+         0 &  0 & 100
+        \end{bmatrix}^{T}
+      \begin{pmatrix}
+        -2\\
+        -50\\
+        1
+      \end{pmatrix}
+      - (60 + \Delta) \geq 0
+      \rightarrow \Delta \leq 40
+\end{equation}
+$$
 
-
-
-![width](./assets/img/21sens_c1.png)
+Verificando o impacto no custo relativo:
+$$
+\begin{equation}
+  c_{B}B^{-1}a_1 - c_1 =
+     =\begin{bmatrix}
+         0 &  0 & 100
+        \end{bmatrix}^{T}
+      \begin{pmatrix}
+        -2\\
+        -50\\
+        1
+      \end{pmatrix}
+      - 150 = -50 \rightarrow \leq 0
+\end{equation}
+$$
 
 --- .class #id 
 
@@ -95,8 +154,11 @@ a) Variáveis não-básicas:
 
 a)Cont. variáveis não-básicas:
 
+<br>
+<p><img src="./assets/img/21sens_c1_sol-jj.jpg" align="middle">
+</p>
 
-![width](./assets/img/21sens_c1_sol.png)
+<!---![width](./assets/img/21sens_c1_sol-j.png)--->
 
 --- .class #id 
 
@@ -134,21 +196,75 @@ b) Cont. variáveis básicas
 
 ![width](./assets/img/23sens_b_sol.png)
 
---- .class #id 
 
+--- &twocol
 
 ## Slide 10 - Acréscimo de atividade
 
+*** =left
+<font color="red">Estrutura do novo problema</font> »
+<br>
+<br>
+<p style="font-size:15px">
+(P.L.) 
+$$Max Z = 60x_1 + 100x_2 + 80x_3 + 100x_p$$
+s.a. 
+$$6x_1 + 8x_2 + 10x_3 + 10x_p \leq 5000 $$
+$$100x_1 + 150x_2 + 120x_3 + 10x_p \leq 80000 $$
+$$x_1 + x_2 + x_3 +x_p \leq 500 $$
+$$x_i \geq 0, i=1,2,3,p $$
+</p>
 
-![width](./assets/img/24sens_xp1.png)
+*** =right
+<font color="red">Outras alterações</font>/ Impactos »
+<br>
+<br>
+<p style="font-size:11px">
+$$c_p = 150$$ ; $$a_p = 
+\begin{pmatrix}
+10\\
+10\\
+1\\
+\end{pmatrix}
+$$
+<p>
 
---- .class #id
+<br>
+<br>
 
+<p style="font-size:11px">
+Verificando se $$(z_p - c_p) \geq 0$$:
+$$
+\begin{equation}
+  c_{B}B^{-1}a_p - c_p =
+     =\begin{bmatrix}
+         c_{4} &   c_{5} & c_{2}
+        \end{bmatrix}^{T}
+      \begin{bmatrix}
+        1 & 0 & -8\\
+        0 & 1 & -150\\
+        0 & 0 & 1
+        \end{bmatrix}
+      \begin{pmatrix}
+        10\\
+        10\\
+        1
+      \end{pmatrix}
+      - 150 = -50 < 0
+\end{equation}
+$$
+</p>
+
+--- &twocol
 
 ## Slide 11 - Cont. Acréscimo de atividade
 
+<font color="red">Alterações nos tablôs</font>/ »
+<br>
+<br>
 
-![width](./assets/img/24sens_xp_sol.png)
+
+
 
 --- .class #id 
 

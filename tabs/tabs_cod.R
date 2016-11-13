@@ -4,6 +4,5 @@
 
 prob.loc<-file.choose()
 
-prob.tab<-read.table(prob.loc, header=TRUE,sep="\t")
+prob2.tab<-read.table(prob.loc, header=TRUE,sep="\t")
 
-help
