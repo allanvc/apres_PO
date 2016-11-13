@@ -47,44 +47,59 @@ img {
 *** =left
 <br>
 <br>
-<p style="font-size:15px">
-(P.L.) 
-$$Max Z = 60x_1 + 100x_2 + 80x_3$$
-s.a. 
-$$6x_1 + 8x_2 + 10x_3 \leq 5000 $$
-$$100x_1 + 150x_2 + 120x_3 \leq 80000 $$
-$$x_1 + x_2 + x_3 \leq 500 $$
-$$x_i \geq 0, i=1,2,3 $$
+<p style="font-size:12px">
+(P.L.)
+$$
+\begin{equation}
+   \begin{array}{*{4}{z}}         % {zzzr} works too
+      Max Z & =60x_1 & +100x_2 & +80x_3 & &\\
+      s.a.& 6x_1 & +8x_2 & +10x_3 & \leq & 5000\\
+      & 100x_1 & +150x_2 & +120x_3 & \leq & 80000\\
+      & x_1 & +x_2 & +x_3 & \leq & 500\\
+      & x_i \geq 0 & i=1,2,3
+   \end{array}
+\end{equation}
+$$
 </p>
 
 *** =right
 <br>
 <br>
-<p style="font-size:15px">
-(P.L.) Forma Padrão
-$$Max Z = 60x_1 + 100x_2 + 80x_3$$
-s.a. 
-$$6x_1 + 8x_2 + 10x_3 +x_4 = 5000 $$
-$$100x_1 + 150x_2 + 120x_3    +x_5 = 80000 $$
-$$x_1 + x_2 + x_3     +x_6 = 500 $$
-$$x_i \geq 0, i=1,2,3 $$
+<p style="font-size:12px">
+(P.L.) - forma padrão
+$$
+\begin{equation}
+   \begin{array}{*{4}{z}}         % {zzzr} works too
+      Max Z & =60x_1 & +100x_2 & +80x_3 & & & &\\
+      s.a.& 6x_1 & +8x_2 & +10x_3 & +x_4 & & & = & 5000\\
+      & 100x_1 & +150x_2 & +120x_3 & & +x_5 & & = & 80000\\
+      & x_1 & +x_2 & +x_3 & & & +x_6 & = & 500\\
+      & x_i \geq 0 & i=1,2,3,4,5,6
+   \end{array}
+\end{equation}
+$$
 </p>
 
 --- &twocol 
 
 ## Slide 2 - Problema Dual Associado
-<font color="red">Situação fictícia</font>/ Interpretação »
+<font color="red">Interpretação do (P.D.) </font> »
 
 *** =left
 <!-- controlando o tamnho da fonte em css para html5 -->
 <p style="font-size:17px">
 (P.D.) 
-$$Min \phi = 5000\lambda_1 + 80000\lambda_2 + 500 \lambda_3$$
-s.a. 
-$$6\lambda_1 + 100\lambda_2 + \lambda_3 \geq 60 $$
-$$8\lambda_1 + 150\lambda_2 + \lambda_3 \geq 100 $$
-$$10\lambda_1 + 120\lambda_2 + \lambda_3 \geq 80 $$
-$$\lambda_i \geq 0 $$
+$$
+\begin{equation}
+   \begin{array}{*{4}{z}}         % {zzzr} works too
+      Min \phi & = & 5000\lambda_1 & +80000\lambda_2 & +500\lambda_3 & &\\
+      s.a.& 6\lambda_1 & +100\lambda_2 & +\lambda_3 & \geq & 60\\
+      & 8\lambda_1 & +150\lambda_2 & +\lambda_3 & \geq & 100\\
+      & 10\lambda_1 & +120\lambda_2 & +\lambda_3 & \geq & 80\\
+      & \lambda_i \geq 0 & i=1,\cdot,3
+ \end{array}
+\end{equation}
+$$
 </p>
 
 
@@ -93,26 +108,37 @@ $$\lambda_i \geq 0 $$
 <p><center><img src="./assets/img/arrendamento2.png" align="middle">
 </center></p>
 
---- .class #id 
+--- &twocol 
 
 
 ## Slide 3 - B) Análise de Sensibilidade
+<font color="red">Tablô inicial e Solução ótima do (PL)</font> »
 
-Tablô incial e Solução ótima do (PL):
-
+*** =left
 ![width](./assets/img/11tablo_inicial.png)
 
 ![width](./assets/img/12tablo_otimo_orig.png)
 
---- .class #id 
+*** =right
+<p><center><img src="./assets/img/milho2.png" align="middle">
+</center></p>
 
+
+--- &twocol 
 
 ## Slide 4 - Alteração Parâmetro "c"
-<font color="red">Variáveis não-básicas</font> »
-<br>
+1)<font color="red">Variáveis não-básicas</font> »
+
+*** =left
+<p><center><img src="./assets/img/preco2.png" align="top">
+</center></p>
+
+
+*** =right
 <br>
 $$c_1 = 60 \rightarrow c'_1=150 $$
 
+<p style="font-size:14px">
 Verificando o "range":
 <br>
 $$
@@ -146,29 +172,37 @@ $$
       - 150 = -50 \rightarrow \leq 0
 \end{equation}
 $$
+</p>
 
---- .class #id 
 
+--- &twocol
 
 ## Slide 5 - Alteração Parâmetro "c"
 
-<font color="red">Cont. Variáveis não-básicas</font> »
+1)<font color="red">Cont. Variáveis não-básicas</font> »
 <br>
+
+*** =left
 <p><img src="./assets/img/21sens_c1_sol-jj.jpg" align="middle">
 <!--- algumas img .PNG davam problema - foi resolvido editando no paint e salbvando em .jpg)--->
 </p>
 
+*** =right
+<!--- se nao colocar o sinal de igual proximo ao right (ex: = right) nao funciona --->
+<br>
+<br>
+<p><img src="./assets/img/trigo1.png" align="middle">
+</p>
 <!---![width](./assets/img/21sens_c1_sol-j.png)--->
 
---- .class #id 
 
+--- &twocol 
 
 ## Slide 6 - Alteração Parâmetro "c"
 
-<font color="red">2) Variáveis básicas</font> »
-<br>
-<br>
-<p style="font-size:15px">
+2)<font color="red">Variáveis básicas</font> »
+*** =left
+<p style="font-size:14px">
 $$ c_4 \rightarrow c'_4=-100$$
 
 <br>
@@ -183,9 +217,7 @@ $$
 $$
 <p>
 
-<br>
-
-<p style="font-size:13px">
+<p style="font-size:12px">
 $$(z_1-c_1):$$
 $$
 \begin{equation}
@@ -235,11 +267,15 @@ $$
 $$
 </p>
 
+*** =right
+<p><img src="./assets/img/custo_empregado.png" align="top">
+</p>
+
 --- .class #id 
 
 
 ## Slide 7 - Alteração Parâmetro "c"
-<font color="red">2) Variáveis básicas</font> » Novo tablô e nova solução
+2)<font color="red"> Variáveis básicas</font> » Novo tablô e nova solução
 <br>
 
 
@@ -260,16 +296,87 @@ $$
 |x3       |   1|   1|  1|  0|  0|    1|    500|
 
 
+
+--- &twocol 
+
+## Slide 8 - Parâmetro "b"
+<font color="red"> Alteração no capital disponível</font> »
+
+*** =left
+<p style="font-size:14px">
+$$ b_2=80.000 \rightarrow b'_2=50.000$$
+</p>
+
+<p style="font-size:14px">
+$$ Range:
+\begin{equation}
+  b' = \begin{pmatrix}
+         5000\\
+         80000+\Delta\\
+         500
+      \end{pmatrix}
+      \rightarrow
+\end{equation}
+$$
+$$
+\begin{equation}
+      b' = B^{-1}b' =
+        \begin{bmatrix}
+            1 & 0 & -8\\
+            0 & 1 & -150\\
+            0 & 0 & 1
+        \end{bmatrix}
+        \begin{pmatrix}
+          5000\\
+          80000+\Delta\\
+          500
+        \end{pmatrix}
+        \geq 0
+\end{equation}
+$$
+$$
+\begin{equation}
+  = \begin{pmatrix}
+      1000\\
+      \Delta+5000\\
+      500
+    \end{pmatrix}
+    \geq -5000
+\end{equation}
+$$
+</p>
+<center> Solução Infactível: </center>
+<p style="font-size:14px">
+$$
+\begin{equation}
+      b' = B^{-1}b' =
+        \begin{bmatrix}
+            1 & 0 & -8\\
+            0 & 1 & -150\\
+            0 & 0 & 1
+        \end{bmatrix}
+        \begin{pmatrix}
+          5000\\
+          50000\\
+          500
+        \end{pmatrix}
+        =
+        \begin{pmatrix}
+          1000\\
+          -25000\\
+          500
+        \end{pmatrix}
+        < 0
+\end{equation}
+$$
+</p>
+
+*** =right
+<p><img src="./assets/img/crise1.png" align="top">
+</p>
+
+
 --- .class #id 
-
-
-## Slide 8 - Alteração Parâmetro "b"
-
-
-![width](./assets/img/23sens_b1.png)
-
---- .class #id 
-
 
 ## Slide 9 - Cont. Alteração Parâmetro "b"
 
@@ -284,7 +391,6 @@ $$
 *** =left
 <font color="red">Estrutura do novo problema</font> »
 <br>
-<br>
 <p style="font-size:15px">
 (P.L.) 
 $$Max Z = 60x_1 + 100x_2 + 80x_3 + 100x_p$$
@@ -295,8 +401,12 @@ $$x_1 + x_2 + x_3 +x_p \leq 500 $$
 $$x_i \geq 0, i=1,2,3,p $$
 </p>
 
+<br>
+<p><center><img src="./assets/img/algodao.jpg" align="middle">
+</center></p>
+
 *** =right
-<font color="red">Outras alterações</font>/ Impactos »
+<font color="red">Outras alterações/ impactos</font> »
 <br>
 <br>
 <p style="font-size:15px">
@@ -334,40 +444,90 @@ $$
 $$
 </p>
 
---- &twocol
+--- .class #id 
 
-## Slide 11 - Cont. Acréscimo de atividade
+## Slide 11 - Acréscimo de atividade
 
-<font color="red">Alterações nos tablôs</font>/ »
+<font color="red">Novo tablô e solução</font>/ »
 <br>
+
+
+|Base.Var |  x1| x2|  x3| x4| x5|   x6|x7.  |   RHS|
+|:--------|---:|--:|---:|--:|--:|----:|:----|-----:|
+|Z        |  40|  0|  20|  0|  0|  100|-50* | 50000|
+|x4       |  -2|  0|   2|  1|  0|   -8|2    |  1000|
+|x5       | -50|  0| -30|  0|  1| -150|-140 |  5000|
+|x2       |   1|  1|   1|  0|  0|    1|1    |   500|
 <br>
 
 
+|Base.Var | x1|  x2|  x3| x4| x5|  x6| x7|   RHS|
+|:--------|--:|---:|---:|--:|--:|---:|--:|-----:|
+|Z        | 90|  50|  70|  0|  0| 150|  0| 75000|
+|x4       | -4|  -2|   0|  1|  0| -10|  0|     0|
+|x5       | 90| 140| 110|  0|  1| -10|  0| 75000|
+|x7       |  1|   1|   1|  0|  0|   1|  1|   500|
 
 
 --- .class #id 
 
-
 ## Slide 12 - Acréscimo de restrição
+<font color="red">Novo (P.L.) e ajustes</font>/ »
+<br>
 
+$$
+\begin{equation}
+   \begin{array}{*{4}{z}}         % {zzzr} works too
+      Max Z & =60x_1 & +100x_2 & +80x_3 & &\\
+      s.a.& 6x_1 & +8x_2 & +10x_3 & \leq & 5000\\
+      & 100x_1 & +150x_2 & +120x_3 & \leq & 80000\\
+      & x_1 & +x_2 & +x_3 & \leq & 500\\
+      &     &     & x_3 & \geq & 10\\
+      & x_i \geq 0 & i=1,2,3
+   \end{array}
+\end{equation}
+$$
 
-![width](./assets/img/25sens_RT1.png)
+Ajustes:
+$$ -x_3 \leq -10 $$
+$$ -x_3 + s_7 = -10$$
 
 --- .class #id
 
 
-## Slide 13 - Cont. Acréscimo de restrição
+## Slide 13 - Acréscimo Restrição
+<font color="red">Novo tablô e solução</font> »
+<br>
 
 
-![width](./assets/img/25sens_RTsol.png)
+|Base.Var |  x1| x2|  x3| x4| x5|   x6| s7.|   RHS|
+|:--------|---:|--:|---:|--:|--:|----:|---:|-----:|
+|Z        |  40|  0|  20|  0|  0|  100|   0| 50000|
+|x4       |  -2|  0|   2|  1|  0|   -8|   0|  1000|
+|x5       | -50|  0| -30|  0|  1| -150|   0|  5000|
+|x2       |   1|  1|   1|  0|  0|    1|   0|   500|
+|s7*      |   0|  0|  -1|  0|  0|    0|   1|   -10|
+<br>
+
+
+|Base.Var |  x1| x2| x3| x4| x5|   x6| s7|   RHS|
+|:--------|---:|--:|--:|--:|--:|----:|--:|-----:|
+|Z        |  40|  0|  0|  0|  0|  100|  0| 49800|
+|x4       |  -2|  0|  0|  1|  0|   -8|  0|   980|
+|x5       | -50|  0|  0|  0|  1| -150|  0|  4700|
+|x2       |   1|  1|  0|  0|  0|    1|  0|   490|
+|x3       |   0|  0|  1|  0|  0|    0| -1|    10|
 
 --- .class #id 
 
 
 ## Slide 14 - Preços-sombra
 
+$$ \frac{\partial z^*}{\partial b_1} = \lambda_1^* = 0;$$
 
-![width](./assets/img/30precos_sombra.png)
+$$ \frac{\partial z^*}{\partial b_2} = \lambda_2^* = 0;$$
+
+$$ \frac{\partial z^*}{\partial b_3} = \lambda_3^* = 100$$
 
 
 ---

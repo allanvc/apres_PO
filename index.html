@@ -100,14 +100,19 @@ img {
   <p><br>
 <br></p>
 
-<p style="font-size:15px">
-(P.L.) 
-$$Max Z = 60x_1 + 100x_2 + 80x_3$$
-s.a. 
-$$6x_1 + 8x_2 + 10x_3 \leq 5000 $$
-$$100x_1 + 150x_2 + 120x_3 \leq 80000 $$
-$$x_1 + x_2 + x_3 \leq 500 $$
-$$x_i \geq 0, i=1,2,3 $$
+<p style="font-size:12px">
+(P.L.)
+$$
+\begin{equation}
+   \begin{array}{*{4}{z}}         % {zzzr} works too
+      Max Z & =60x_1 & +100x_2 & +80x_3 & &\\
+      s.a.& 6x_1 & +8x_2 & +10x_3 & \leq & 5000\\
+      & 100x_1 & +150x_2 & +120x_3 & \leq & 80000\\
+      & x_1 & +x_2 & +x_3 & \leq & 500\\
+      & x_i \geq 0 & i=1,2,3
+   \end{array}
+\end{equation}
+$$
 </p>
 
 </div>
@@ -115,14 +120,19 @@ $$x_i \geq 0, i=1,2,3 $$
   <p><br>
 <br></p>
 
-<p style="font-size:15px">
-(P.L.) Forma Padrão
-$$Max Z = 60x_1 + 100x_2 + 80x_3$$
-s.a. 
-$$6x_1 + 8x_2 + 10x_3 +x_4 = 5000 $$
-$$100x_1 + 150x_2 + 120x_3    +x_5 = 80000 $$
-$$x_1 + x_2 + x_3     +x_6 = 500 $$
-$$x_i \geq 0, i=1,2,3 $$
+<p style="font-size:12px">
+(P.L.) - forma padrão
+$$
+\begin{equation}
+   \begin{array}{*{4}{z}}         % {zzzr} works too
+      Max Z & =60x_1 & +100x_2 & +80x_3 & & & &\\
+      s.a.& 6x_1 & +8x_2 & +10x_3 & +x_4 & & & = & 5000\\
+      & 100x_1 & +150x_2 & +120x_3 & & +x_5 & & = & 80000\\
+      & x_1 & +x_2 & +x_3 & & & +x_6 & = & 500\\
+      & x_i \geq 0 & i=1,2,3,4,5,6
+   \end{array}
+\end{equation}
+$$
 </p>
 
 </div>
@@ -135,19 +145,24 @@ $$x_i \geq 0, i=1,2,3 $$
     <h2>Slide 2 - Problema Dual Associado</h2>
   </hgroup>
   <article data-timings="">
-    <p><font color="red">Situação fictícia</font>/ Interpretação »</p>
+    <p><font color="red">Interpretação do (P.D.) </font> »</p>
 
 <div style='float:left;width:48%;' class='centered'>
   <!-- controlando o tamnho da fonte em css para html5 -->
 
 <p style="font-size:17px">
 (P.D.) 
-$$Min \phi = 5000\lambda_1 + 80000\lambda_2 + 500 \lambda_3$$
-s.a. 
-$$6\lambda_1 + 100\lambda_2 + \lambda_3 \geq 60 $$
-$$8\lambda_1 + 150\lambda_2 + \lambda_3 \geq 100 $$
-$$10\lambda_1 + 120\lambda_2 + \lambda_3 \geq 80 $$
-$$\lambda_i \geq 0 $$
+$$
+\begin{equation}
+   \begin{array}{*{4}{z}}         % {zzzr} works too
+      Min \phi & = & 5000\lambda_1 & +80000\lambda_2 & +500\lambda_3 & &\\
+      s.a.& 6\lambda_1 & +100\lambda_2 & +\lambda_3 & \geq & 60\\
+      & 8\lambda_1 & +150\lambda_2 & +\lambda_3 & \geq & 100\\
+      & 10\lambda_1 & +120\lambda_2 & +\lambda_3 & \geq & 80\\
+      & \lambda_i \geq 0 & i=1,\cdot,3
+ \end{array}
+\end{equation}
+$$
 </p>
 
 </div>
@@ -162,34 +177,48 @@ $$\lambda_i \geq 0 $$
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-3" style="background:;">
   <hgroup>
     <h2>Slide 3 - B) Análise de Sensibilidade</h2>
   </hgroup>
   <article data-timings="">
-    <p>Tablô incial e Solução ótima do (PL):</p>
+    <p><font color="red">Tablô inicial e Solução ótima do (PL)</font> »</p>
 
-<p><img src="./assets/img/11tablo_inicial.png" alt="width"></p>
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="./assets/img/11tablo_inicial.png" alt="width"></p>
 
 <p><img src="./assets/img/12tablo_otimo_orig.png" alt="width"></p>
 
+</div>
+<div style='float:right;width:48%;'>
+  <p><center><img src="./assets/img/milho2.png" align="middle">
+</center></p>
+
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-4" style="background:;">
   <hgroup>
     <h2>Slide 4 - Alteração Parâmetro &quot;c&quot;</h2>
   </hgroup>
   <article data-timings="">
-    <p><font color="red">Variáveis não-básicas</font> »
-<br>
-<br>
+    <p>1)<font color="red">Variáveis não-básicas</font> »</p>
+
+<div style='float:left;width:48%;' class='centered'>
+  <p><center><img src="./assets/img/preco2.png" align="top">
+</center></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><br>
 \[c_1 = 60 \rightarrow c'_1=150 \]</p>
 
-<p>Verificando o &quot;range&quot;:
+<p style="font-size:14px">
+Verificando o "range":
 <br>
-\[
+$$
 \begin{equation}
   c_{B}B^{-1}a_1 - c_1 =
      \begin{bmatrix}
@@ -203,10 +232,10 @@ $$\lambda_i \geq 0 $$
       - (60 + \Delta) \geq 0
       \rightarrow \Delta \leq 40
 \end{equation}
-\]</p>
+$$
 
-<p>Verificando o impacto no custo relativo:
-\[
+Verificando o impacto no custo relativo:
+$$
 \begin{equation}
   c_{B}B^{-1}a_1 - c_1 =
      \begin{bmatrix}
@@ -219,40 +248,53 @@ $$\lambda_i \geq 0 $$
       \end{pmatrix}
       - 150 = -50 \rightarrow \leq 0
 \end{equation}
-\]</p>
+$$
+</p>
 
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-5" style="background:;">
   <hgroup>
     <h2>Slide 5 - Alteração Parâmetro &quot;c&quot;</h2>
   </hgroup>
   <article data-timings="">
-    <p><font color="red">Cont. Variáveis não-básicas</font> »
+    <p>1)<font color="red">Cont. Variáveis não-básicas</font> »
 <br></p>
 
-<p><img src="./assets/img/21sens_c1_sol-jj.jpg" align="middle">
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="./assets/img/21sens_c1_sol-jj.jpg" align="middle">
 <!--- algumas img .PNG davam problema - foi resolvido editando no paint e salbvando em .jpg)--->
+</p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <!--- se nao colocar o sinal de igual proximo ao right (ex: = right) nao funciona --->
+
+<p><br>
+<br></p>
+
+<p><img src="./assets/img/trigo1.png" align="middle">
 </p>
 
 <!---![width](./assets/img/21sens_c1_sol-j.png)--->
 
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-6" style="background:;">
   <hgroup>
     <h2>Slide 6 - Alteração Parâmetro &quot;c&quot;</h2>
   </hgroup>
   <article data-timings="">
-    <p><font color="red">2) Variáveis básicas</font> »
-<br>
-<br></p>
+    <p>2)<font color="red">Variáveis básicas</font> »</p>
 
-<p style="font-size:15px">
+<div style='float:left;width:48%;' class='centered'>
+  <p style="font-size:14px">
 $$ c_4 \rightarrow c'_4=-100$$
 
 <br>
@@ -267,9 +309,7 @@ $$
 $$
 <p>
 
-<br>
-
-<p style="font-size:13px">
+<p style="font-size:12px">
 $$(z_1-c_1):$$
 $$
 \begin{equation}
@@ -319,6 +359,12 @@ $$
 $$
 </p>
 
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="./assets/img/custo_empregado.png" align="top">
+</p>
+
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -328,7 +374,7 @@ $$
     <h2>Slide 7 - Alteração Parâmetro &quot;c&quot;</h2>
   </hgroup>
   <article data-timings="">
-    <p><font color="red">2) Variáveis básicas</font> » Novo tablô e nova solução
+    <p>2)<font color="red"> Variáveis básicas</font> » Novo tablô e nova solução
 <br></p>
 
 <table><thead>
@@ -445,13 +491,90 @@ $$
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-8" style="background:;">
   <hgroup>
-    <h2>Slide 8 - Alteração Parâmetro &quot;b&quot;</h2>
+    <h2>Slide 8 - Parâmetro &quot;b&quot;</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="./assets/img/23sens_b1.png" alt="width"></p>
+    <p><font color="red"> Alteração no capital disponível</font> »</p>
 
+<div style='float:left;width:48%;' class='centered'>
+  <p style="font-size:14px">
+$$ b_2=80.000 \rightarrow b'_2=50.000$$
+</p>
+
+<p style="font-size:14px">
+$$ Range:
+\begin{equation}
+  b' = \begin{pmatrix}
+         5000\\
+         80000+\Delta\\
+         500
+      \end{pmatrix}
+      \rightarrow
+\end{equation}
+$$
+$$
+\begin{equation}
+      b' = B^{-1}b' =
+        \begin{bmatrix}
+            1 & 0 & -8\\
+            0 & 1 & -150\\
+            0 & 0 & 1
+        \end{bmatrix}
+        \begin{pmatrix}
+          5000\\
+          80000+\Delta\\
+          500
+        \end{pmatrix}
+        \geq 0
+\end{equation}
+$$
+$$
+\begin{equation}
+  = \begin{pmatrix}
+      1000\\
+      \Delta+5000\\
+      500
+    \end{pmatrix}
+    \geq -5000
+\end{equation}
+$$
+</p>
+
+<p><center> Solução Infactível: </center></p>
+
+<p style="font-size:14px">
+$$
+\begin{equation}
+      b' = B^{-1}b' =
+        \begin{bmatrix}
+            1 & 0 & -8\\
+            0 & 1 & -150\\
+            0 & 0 & 1
+        \end{bmatrix}
+        \begin{pmatrix}
+          5000\\
+          50000\\
+          500
+        \end{pmatrix}
+        =
+        \begin{pmatrix}
+          1000\\
+          -25000\\
+          500
+        \end{pmatrix}
+        < 0
+\end{equation}
+$$
+</p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="./assets/img/crise1.png" align="top">
+</p>
+
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -475,7 +598,6 @@ $$
     
 <div style='float:left;width:48%;' class='centered'>
   <p><font color="red">Estrutura do novo problema</font> »
-<br>
 <br></p>
 
 <p style="font-size:15px">
@@ -488,9 +610,14 @@ $$x_1 + x_2 + x_3 +x_p \leq 500 $$
 $$x_i \geq 0, i=1,2,3,p $$
 </p>
 
+<p><br></p>
+
+<p><center><img src="./assets/img/algodao.jpg" align="middle">
+</center></p>
+
 </div>
 <div style='float:right;width:48%;'>
-  <p><font color="red">Outras alterações</font>/ Impactos »
+  <p><font color="red">Outras alterações/ impactos</font> »
 <br>
 <br></p>
 
@@ -534,21 +661,134 @@ $$
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-11" style="background:;">
+<slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 11 - Cont. Acréscimo de atividade</h2>
+    <h2>Slide 11 - Acréscimo de atividade</h2>
   </hgroup>
   <article data-timings="">
-    <p><font color="red">Alterações nos tablôs</font>/ »
-<br>
+    <p><font color="red">Novo tablô e solução</font>/ »
 <br></p>
 
-<div style='float:left;width:48%;' class='centered'>
-  
-</div>
-<div style='float:right;width:48%;'>
-  
-</div>
+<table><thead>
+<tr>
+<th align="left">Base.Var</th>
+<th align="right">x1</th>
+<th align="right">x2</th>
+<th align="right">x3</th>
+<th align="right">x4</th>
+<th align="right">x5</th>
+<th align="right">x6</th>
+<th align="left">x7.</th>
+<th align="right">RHS</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">Z</td>
+<td align="right">40</td>
+<td align="right">0</td>
+<td align="right">20</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">100</td>
+<td align="left">-50*</td>
+<td align="right">50000</td>
+</tr>
+<tr>
+<td align="left">x4</td>
+<td align="right">-2</td>
+<td align="right">0</td>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">-8</td>
+<td align="left">2</td>
+<td align="right">1000</td>
+</tr>
+<tr>
+<td align="left">x5</td>
+<td align="right">-50</td>
+<td align="right">0</td>
+<td align="right">-30</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">-150</td>
+<td align="left">-140</td>
+<td align="right">5000</td>
+</tr>
+<tr>
+<td align="left">x2</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="left">1</td>
+<td align="right">500</td>
+</tr>
+</tbody></table>
+
+<p><br></p>
+
+<table><thead>
+<tr>
+<th align="left">Base.Var</th>
+<th align="right">x1</th>
+<th align="right">x2</th>
+<th align="right">x3</th>
+<th align="right">x4</th>
+<th align="right">x5</th>
+<th align="right">x6</th>
+<th align="right">x7</th>
+<th align="right">RHS</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">Z</td>
+<td align="right">90</td>
+<td align="right">50</td>
+<td align="right">70</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">150</td>
+<td align="right">0</td>
+<td align="right">75000</td>
+</tr>
+<tr>
+<td align="left">x4</td>
+<td align="right">-4</td>
+<td align="right">-2</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">-10</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left">x5</td>
+<td align="right">90</td>
+<td align="right">140</td>
+<td align="right">110</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">-10</td>
+<td align="right">0</td>
+<td align="right">75000</td>
+</tr>
+<tr>
+<td align="left">x7</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">500</td>
+</tr>
+</tbody></table>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -558,7 +798,25 @@ $$
     <h2>Slide 12 - Acréscimo de restrição</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="./assets/img/25sens_RT1.png" alt="width"></p>
+    <p><font color="red">Novo (P.L.) e ajustes</font>/ »
+<br></p>
+
+<p>\[
+\begin{equation}
+   \begin{array}{*{4}{z}}         % {zzzr} works too
+      Max Z & =60x_1 & +100x_2 & +80x_3 & &\\
+      s.a.& 6x_1 & +8x_2 & +10x_3 & \leq & 5000\\
+      & 100x_1 & +150x_2 & +120x_3 & \leq & 80000\\
+      & x_1 & +x_2 & +x_3 & \leq & 500\\
+      &     &     & x_3 & \geq & 10\\
+      & x_i \geq 0 & i=1,2,3
+   \end{array}
+\end{equation}
+\]</p>
+
+<p>Ajustes:
+\[ -x_3 \leq -10 \]
+\[ -x_3 + s_7 = -10\]</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -566,10 +824,153 @@ $$
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 13 - Cont. Acréscimo de restrição</h2>
+    <h2>Slide 13 - Acréscimo Restrição</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="./assets/img/25sens_RTsol.png" alt="width"></p>
+    <p><font color="red">Novo tablô e solução</font> »
+<br></p>
+
+<table><thead>
+<tr>
+<th align="left">Base.Var</th>
+<th align="right">x1</th>
+<th align="right">x2</th>
+<th align="right">x3</th>
+<th align="right">x4</th>
+<th align="right">x5</th>
+<th align="right">x6</th>
+<th align="right">s7.</th>
+<th align="right">RHS</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">Z</td>
+<td align="right">40</td>
+<td align="right">0</td>
+<td align="right">20</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">100</td>
+<td align="right">0</td>
+<td align="right">50000</td>
+</tr>
+<tr>
+<td align="left">x4</td>
+<td align="right">-2</td>
+<td align="right">0</td>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">-8</td>
+<td align="right">0</td>
+<td align="right">1000</td>
+</tr>
+<tr>
+<td align="left">x5</td>
+<td align="right">-50</td>
+<td align="right">0</td>
+<td align="right">-30</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">-150</td>
+<td align="right">0</td>
+<td align="right">5000</td>
+</tr>
+<tr>
+<td align="left">x2</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">500</td>
+</tr>
+<tr>
+<td align="left">s7*</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">-1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">-10</td>
+</tr>
+</tbody></table>
+
+<p><br></p>
+
+<table><thead>
+<tr>
+<th align="left">Base.Var</th>
+<th align="right">x1</th>
+<th align="right">x2</th>
+<th align="right">x3</th>
+<th align="right">x4</th>
+<th align="right">x5</th>
+<th align="right">x6</th>
+<th align="right">s7</th>
+<th align="right">RHS</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">Z</td>
+<td align="right">40</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">100</td>
+<td align="right">0</td>
+<td align="right">49800</td>
+</tr>
+<tr>
+<td align="left">x4</td>
+<td align="right">-2</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">-8</td>
+<td align="right">0</td>
+<td align="right">980</td>
+</tr>
+<tr>
+<td align="left">x5</td>
+<td align="right">-50</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">-150</td>
+<td align="right">0</td>
+<td align="right">4700</td>
+</tr>
+<tr>
+<td align="left">x2</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">490</td>
+</tr>
+<tr>
+<td align="left">x3</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">-1</td>
+<td align="right">10</td>
+</tr>
+</tbody></table>
 
   </article>
   <!-- Presenter Notes -->
@@ -580,7 +981,11 @@ $$
     <h2>Slide 14 - Preços-sombra</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="./assets/img/30precos_sombra.png" alt="width"></p>
+    <p>\[ \frac{\partial z^*}{\partial b_1} = \lambda_1^* = 0;\]</p>
+
+<p>\[ \frac{\partial z^*}{\partial b_2} = \lambda_2^* = 0;\]</p>
+
+<p>\[ \frac{\partial z^*}{\partial b_3} = \lambda_3^* = 100\]</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -644,7 +1049,7 @@ $$
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=8 title='Slide 8 - Alteração Parâmetro &quot;b&quot;'>
+        data-slide=8 title='Slide 8 - Parâmetro &quot;b&quot;'>
          8
       </a>
     </li>
@@ -662,7 +1067,7 @@ $$
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=11 title='Slide 11 - Cont. Acréscimo de atividade'>
+        data-slide=11 title='Slide 11 - Acréscimo de atividade'>
          11
       </a>
     </li>
@@ -674,7 +1079,7 @@ $$
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title='Slide 13 - Cont. Acréscimo de restrição'>
+        data-slide=13 title='Slide 13 - Acréscimo Restrição'>
          13
       </a>
     </li>
