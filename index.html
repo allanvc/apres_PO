@@ -116,7 +116,7 @@ $$x_i \geq 0, i=1,2,3 $$
 <br></p>
 
 <p style="font-size:15px">
-(P.L.) 
+(P.L.) Forma Padrão
 $$Max Z = 60x_1 + 100x_2 + 80x_3$$
 s.a. 
 $$6x_1 + 8x_2 + 10x_3 +x_4 = 5000 $$
@@ -182,7 +182,7 @@ $$\lambda_i \geq 0 $$
     <h2>Slide 4 - Alteração Parâmetro &quot;c&quot;</h2>
   </hgroup>
   <article data-timings="">
-    <p><font color="red">Variáveis não-básicas</font>/ »
+    <p><font color="red">Variáveis não-básicas</font> »
 <br>
 <br>
 \[c_1 = 60 \rightarrow c'_1=150 \]</p>
@@ -192,7 +192,7 @@ $$\lambda_i \geq 0 $$
 \[
 \begin{equation}
   c_{B}B^{-1}a_1 - c_1 =
-     =\begin{bmatrix}
+     \begin{bmatrix}
          0 &  0 & 100
         \end{bmatrix}^{T}
       \begin{pmatrix}
@@ -209,7 +209,7 @@ $$\lambda_i \geq 0 $$
 \[
 \begin{equation}
   c_{B}B^{-1}a_1 - c_1 =
-     =\begin{bmatrix}
+     \begin{bmatrix}
          0 &  0 & 100
         \end{bmatrix}^{T}
       \begin{pmatrix}
@@ -230,11 +230,11 @@ $$\lambda_i \geq 0 $$
     <h2>Slide 5 - Alteração Parâmetro &quot;c&quot;</h2>
   </hgroup>
   <article data-timings="">
-    <p>a)Cont. variáveis não-básicas:</p>
-
-<p><br></p>
+    <p><font color="red">Cont. Variáveis não-básicas</font> »
+<br></p>
 
 <p><img src="./assets/img/21sens_c1_sol-jj.jpg" align="middle">
+<!--- algumas img .PNG davam problema - foi resolvido editando no paint e salbvando em .jpg)--->
 </p>
 
 <!---![width](./assets/img/21sens_c1_sol-j.png)--->
@@ -248,11 +248,76 @@ $$\lambda_i \geq 0 $$
     <h2>Slide 6 - Alteração Parâmetro &quot;c&quot;</h2>
   </hgroup>
   <article data-timings="">
-    <p>b) Variáveis básicas</p>
+    <p><font color="red">2) Variáveis básicas</font> »
+<br>
+<br></p>
 
-<p><img src="./assets/img/22sens_c2.png" alt="width"></p>
+<p style="font-size:15px">
+$$ c_4 \rightarrow c'_4=-100$$
 
-<p><img src="./assets/img/22sens_c2_2.png" alt="width"></p>
+<br>
+$$
+\begin{equation}
+  c_{B}B^{-1}a_i - c_i =
+     \begin{bmatrix}
+         c'_4 & c_5 & c_2
+        \end{bmatrix}^{T}
+      y_i -c_i
+\end{equation}
+$$
+<p>
+
+<br>
+
+<p style="font-size:13px">
+$$(z_1-c_1):$$
+$$
+\begin{equation}
+  c_{B}B^{-1}a_1 - c_1 =
+     \begin{bmatrix}
+         0+\Delta &  0 & 100
+        \end{bmatrix}^{T}
+      \begin{pmatrix}
+        -2\\
+        -50\\
+        1
+      \end{pmatrix}
+      - 60 \geq 0 \rightarrow \Delta \geq 20
+\end{equation}
+$$
+
+$$(z_3-c_3):$$
+$$
+\begin{equation}
+  c_{B}B^{-1}a_3 - c_3 =
+     \begin{bmatrix}
+         0+\Delta &  0 & 100
+        \end{bmatrix}^{T}
+      \begin{pmatrix}
+        2\\
+        -30\\
+        1
+      \end{pmatrix}
+      - 80 \geq 0 \rightarrow \Delta \geq -10
+\end{equation}
+$$
+
+$$(z_6-c_6):$$
+$$
+\begin{equation}
+  c_{B}B^{-1}a_6 - c_6 =
+     \begin{bmatrix}
+         0+\Delta &  0 & 100
+        \end{bmatrix}^{T}
+      \begin{pmatrix}
+        -8\\
+        -150\\
+        1
+      \end{pmatrix}
+      - 0 \geq 0 \rightarrow \Delta \leq -12.5
+\end{equation}
+$$
+</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -263,9 +328,118 @@ $$\lambda_i \geq 0 $$
     <h2>Slide 7 - Alteração Parâmetro &quot;c&quot;</h2>
   </hgroup>
   <article data-timings="">
-    <p>b) Cont. variáveis básicas</p>
+    <p><font color="red">2) Variáveis básicas</font> » Novo tablô e nova solução
+<br></p>
 
-<p><img src="./assets/img/22sens_c2_sol.png" alt="width"></p>
+<table><thead>
+<tr>
+<th align="left">Base.Var</th>
+<th align="right">x1</th>
+<th align="right">x2</th>
+<th align="left">x3</th>
+<th align="right">x4</th>
+<th align="right">x5</th>
+<th align="right">x6</th>
+<th align="right">RHS</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">Z</td>
+<td align="right">40</td>
+<td align="right">0</td>
+<td align="left">-180</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">100</td>
+<td align="right">50000</td>
+</tr>
+<tr>
+<td align="left">x4</td>
+<td align="right">-2</td>
+<td align="right">0</td>
+<td align="left">2</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">-8</td>
+<td align="right">1000</td>
+</tr>
+<tr>
+<td align="left">x5</td>
+<td align="right">-50</td>
+<td align="right">0</td>
+<td align="left">-30</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">-150</td>
+<td align="right">5000</td>
+</tr>
+<tr>
+<td align="left">x2</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="left">1*</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">500</td>
+</tr>
+</tbody></table>
+
+<p><br></p>
+
+<table><thead>
+<tr>
+<th align="left">Base.Var</th>
+<th align="right">x1</th>
+<th align="right">x2</th>
+<th align="right">x3</th>
+<th align="right">x4</th>
+<th align="right">x5</th>
+<th align="right">x6</th>
+<th align="right">RHS</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">Z</td>
+<td align="right">220</td>
+<td align="right">180</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">280</td>
+<td align="right">140000</td>
+</tr>
+<tr>
+<td align="left">x4</td>
+<td align="right">-4</td>
+<td align="right">-2</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">-10</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left">x5</td>
+<td align="right">-20</td>
+<td align="right">30</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">-120</td>
+<td align="right">20000</td>
+</tr>
+<tr>
+<td align="left">x3</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">500</td>
+</tr>
+</tbody></table>
 
   </article>
   <!-- Presenter Notes -->
@@ -320,7 +494,7 @@ $$x_i \geq 0, i=1,2,3,p $$
 <br>
 <br></p>
 
-<p style="font-size:11px">
+<p style="font-size:15px">
 $$c_p = 150$$ ; $$a_p = 
 \begin{pmatrix}
 10\\
@@ -331,15 +505,14 @@ $$
 <p>
 
 <br>
-<br>
 
-<p style="font-size:11px">
+<p style="font-size:15px">
 Verificando se $$(z_p - c_p) \geq 0$$:
+$$c_{B}B^{-1}a_p - c_p =$$
 $$
 \begin{equation}
-  c_{B}B^{-1}a_p - c_p =
      =\begin{bmatrix}
-         c_{4} &   c_{5} & c_{2}
+         c_{4} & c_{5} & c_{2}
         \end{bmatrix}^{T}
       \begin{bmatrix}
         1 & 0 & -8\\

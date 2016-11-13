@@ -61,7 +61,7 @@ $$x_i \geq 0, i=1,2,3 $$
 <br>
 <br>
 <p style="font-size:15px">
-(P.L.) 
+(P.L.) Forma Padrão
 $$Max Z = 60x_1 + 100x_2 + 80x_3$$
 s.a. 
 $$6x_1 + 8x_2 + 10x_3 +x_4 = 5000 $$
@@ -108,7 +108,7 @@ Tablô incial e Solução ótima do (PL):
 
 
 ## Slide 4 - Alteração Parâmetro "c"
-<font color="red">Variáveis não-básicas</font>/ »
+<font color="red">Variáveis não-básicas</font> »
 <br>
 <br>
 $$c_1 = 60 \rightarrow c'_1=150 $$
@@ -118,7 +118,7 @@ Verificando o "range":
 $$
 \begin{equation}
   c_{B}B^{-1}a_1 - c_1 =
-     =\begin{bmatrix}
+     \begin{bmatrix}
          0 &  0 & 100
         \end{bmatrix}^{T}
       \begin{pmatrix}
@@ -135,7 +135,7 @@ Verificando o impacto no custo relativo:
 $$
 \begin{equation}
   c_{B}B^{-1}a_1 - c_1 =
-     =\begin{bmatrix}
+     \begin{bmatrix}
          0 &  0 & 100
         \end{bmatrix}^{T}
       \begin{pmatrix}
@@ -152,10 +152,10 @@ $$
 
 ## Slide 5 - Alteração Parâmetro "c"
 
-a)Cont. variáveis não-básicas:
-
+<font color="red">Cont. Variáveis não-básicas</font> »
 <br>
 <p><img src="./assets/img/21sens_c1_sol-jj.jpg" align="middle">
+<!--- algumas img .PNG davam problema - foi resolvido editando no paint e salbvando em .jpg)--->
 </p>
 
 <!---![width](./assets/img/21sens_c1_sol-j.png)--->
@@ -165,20 +165,100 @@ a)Cont. variáveis não-básicas:
 
 ## Slide 6 - Alteração Parâmetro "c"
 
-b) Variáveis básicas
-  
-![width](./assets/img/22sens_c2.png)
+<font color="red">2) Variáveis básicas</font> »
+<br>
+<br>
+<p style="font-size:15px">
+$$ c_4 \rightarrow c'_4=-100$$
 
-![width](./assets/img/22sens_c2_2.png)
+<br>
+$$
+\begin{equation}
+  c_{B}B^{-1}a_i - c_i =
+     \begin{bmatrix}
+         c'_4 & c_5 & c_2
+        \end{bmatrix}^{T}
+      y_i -c_i
+\end{equation}
+$$
+<p>
+
+<br>
+
+<p style="font-size:13px">
+$$(z_1-c_1):$$
+$$
+\begin{equation}
+  c_{B}B^{-1}a_1 - c_1 =
+     \begin{bmatrix}
+         0+\Delta &  0 & 100
+        \end{bmatrix}^{T}
+      \begin{pmatrix}
+        -2\\
+        -50\\
+        1
+      \end{pmatrix}
+      - 60 \geq 0 \rightarrow \Delta \geq 20
+\end{equation}
+$$
+
+$$(z_3-c_3):$$
+$$
+\begin{equation}
+  c_{B}B^{-1}a_3 - c_3 =
+     \begin{bmatrix}
+         0+\Delta &  0 & 100
+        \end{bmatrix}^{T}
+      \begin{pmatrix}
+        2\\
+        -30\\
+        1
+      \end{pmatrix}
+      - 80 \geq 0 \rightarrow \Delta \geq -10
+\end{equation}
+$$
+
+$$(z_6-c_6):$$
+$$
+\begin{equation}
+  c_{B}B^{-1}a_6 - c_6 =
+     \begin{bmatrix}
+         0+\Delta &  0 & 100
+        \end{bmatrix}^{T}
+      \begin{pmatrix}
+        -8\\
+        -150\\
+        1
+      \end{pmatrix}
+      - 0 \geq 0 \rightarrow \Delta \leq -12.5
+\end{equation}
+$$
+</p>
 
 --- .class #id 
 
 
 ## Slide 7 - Alteração Parâmetro "c"
+<font color="red">2) Variáveis básicas</font> » Novo tablô e nova solução
+<br>
 
-b) Cont. variáveis básicas
 
-![width](./assets/img/22sens_c2_sol.png)
+|Base.Var |  x1| x2|x3   | x4| x5|   x6|   RHS|
+|:--------|---:|--:|:----|--:|--:|----:|-----:|
+|Z        |  40|  0|-180 |  0|  0|  100| 50000|
+|x4       |  -2|  0|2    |  1|  0|   -8|  1000|
+|x5       | -50|  0|-30  |  0|  1| -150|  5000|
+|x2       |   1|  1|1*   |  0|  0|    1|   500|
+<br>
+
+
+|Base.Var |  x1|  x2| x3| x4| x5|   x6|    RHS|
+|:--------|---:|---:|--:|--:|--:|----:|------:|
+|Z        | 220| 180|  0|  0|  0|  280| 140000|
+|x4       |  -4|  -2|  0|  1|  0|  -10|      0|
+|x5       | -20|  30|  0|  0|  1| -120|  20000|
+|x3       |   1|   1|  1|  0|  0|    1|    500|
+
 
 --- .class #id 
 
@@ -219,7 +299,7 @@ $$x_i \geq 0, i=1,2,3,p $$
 <font color="red">Outras alterações</font>/ Impactos »
 <br>
 <br>
-<p style="font-size:11px">
+<p style="font-size:15px">
 $$c_p = 150$$ ; $$a_p = 
 \begin{pmatrix}
 10\\
@@ -230,15 +310,14 @@ $$
 <p>
 
 <br>
-<br>
 
-<p style="font-size:11px">
+<p style="font-size:15px">
 Verificando se $$(z_p - c_p) \geq 0$$:
+$$c_{B}B^{-1}a_p - c_p =$$
 $$
 \begin{equation}
-  c_{B}B^{-1}a_p - c_p =
      =\begin{bmatrix}
-         c_{4} &   c_{5} & c_{2}
+         c_{4} & c_{5} & c_{2}
         \end{bmatrix}^{T}
       \begin{bmatrix}
         1 & 0 & -8\\
