@@ -57,7 +57,7 @@ img {
 <font color="red">Modelagem</font> »
 <br>
 <br>
-<p style="font-size:13px">
+<p style="font-size:15px">
 (P.L.)
 $$
 \begin{equation}
@@ -75,7 +75,7 @@ $$
 <br>
 <br>
 
-<p style="font-size:12px">
+<p style="font-size:12.5px">
 (P.L.) - forma padrão
 $$
 \begin{equation}
@@ -215,7 +215,7 @@ $$
 
 2)<font color="red">Variáveis básicas</font> »
 *** =left
-<p style="font-size:14px">
+<p style="font-size:15px">
 $$ c_4 \rightarrow c'_4=-100$$
 
 <br>
@@ -230,7 +230,7 @@ $$
 $$
 <p>
 
-<p style="font-size:12px">
+<p style="font-size:14px">
 $$(z_1-c_1):$$
 $$
 \begin{equation}
@@ -243,7 +243,7 @@ $$
         -50\\
         1
       \end{pmatrix}
-      - 60 \geq 0 \rightarrow \Delta \geq 20
+      - 60 \geq 0 \rightarrow \Delta \leq 20
 \end{equation}
 $$
 
@@ -275,7 +275,7 @@ $$
         -150\\
         1
       \end{pmatrix}
-      - 0 \geq 0 \rightarrow \Delta \leq -12.5
+      - 0 \geq 0 \rightarrow \Delta \leq 12.5
 \end{equation}
 $$
 </p>
@@ -316,11 +316,11 @@ $$
 <font color="red"> Alteração no capital disponível</font> »
 
 *** =left
-<p style="font-size:14px">
+<p style="font-size:15px">
 $$ b_2=80.000 \rightarrow b'_2=50.000$$
 </p>
 
-<p style="font-size:14px">
+<p style="font-size:15px">
 $$ Range:
 \begin{equation}
   b' = \begin{pmatrix}
@@ -359,7 +359,7 @@ $$
 $$
 </p>
 <center> Solução Infactível: </center>
-<p style="font-size:14px">
+<p style="font-size:15px">
 $$
 \begin{equation}
       b' = B^{-1}b' =
@@ -428,7 +428,8 @@ $$
 <br>
 <br>
 <p style="font-size:15px">
-$$c_p = 150$$ ; $$a_p = 
+$$c_p = 150$$ 
+$$a_p = 
 \begin{pmatrix}
 10\\
 10\\
