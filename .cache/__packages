@@ -5,3 +5,8 @@ knitr
 slidifyLibraries
 XML
 googleVis
+reshape2
+devtools
+plyr
+rjson
+rCharts

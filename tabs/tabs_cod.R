@@ -41,3 +41,20 @@ ot_RT.tab<-read.table(ot_RT.loc, header=TRUE,sep="\t")
 
 
 
+# GVis Tab:
+require(googleVis)
+
+gVis.loc<-file.choose()
+gVis.tab<-read.table(gVis.loc, header = TRUE, sep="\t", dec=".")
+str(gVis.tab)
+gVis.tab[,"valor"]<-as.numeric(as.character(gVis.tab[,"valor"]))
+plot(gvisMotionChart(gVis.tab,idvar="var", timevar=c("modif")))
+
+#Fruits - df exemplo do pacote do GoogleVis
+
+#GVis soh para f.o. (z)
+z_gVis.loc<-file.choose()
+z_gVis.tab<-read.table(z_gVis.loc, header = TRUE, sep="\t", dec=",")
+str(z_gVis.tab)
+z_gVis.tab[,"valor"]<-as.numeric(z_gVis.tab[,"valor"])
+plot(gvisMotionChart(z_gVis.tab,idvar="var", timevar=c("modif")))

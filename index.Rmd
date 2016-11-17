@@ -1,16 +1,17 @@
 ---
 title       : Trabalho - Pesquisa Operacional 1
 subtitle    : Grupo 2
-author      : Allan Vieira; Akane; Luana; Olivia Ziller
+author      : Akane; Allan; Luana; Olivia
 job         : 
 framework   : io2012       # {io2012, html5slides, shower, dzslides, ...}
 highlighter : prettify  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
+hitheme     : solarized_light      # 
 widgets     : [mathjax]
 mode        : selfcontained # {standalone, draft}
-github:
-  user:allanvc
-  repo:pres_PO
+logo: unb_logo.jpg
+# github:
+#   user:allanvc
+#   repo:pres_PO
 
 --- &twocol <!--- jah vao comecar o primeiro slide dividindo em 2 col --->
 
@@ -31,9 +32,6 @@ img {
 
 ## Slide 1 - Questão 1[6.57]
 
-<font color="red">Problema</font> »
-<br>
-<br>
 
 ```{r carregamento, echo=FALSE}
 #workspace.loc<-file.choose()
@@ -41,9 +39,18 @@ load("./tabs/tabs_work.RData")
 # pacote para tabelas
 library(knitr)
 # pacote para interação googleVis + libraries do slidify
-#require(googleVis)
-library(slidifyLibraries)
+#suppressPackageStartupMessages(library(googleVis))
 ```
+
+*** =left
+
+<font color="red">Problema</font> »
+<br>
+<br>
+<p>
+500 acres a serem plantados ...
+<p>
+<br>
 
 ```{r prob2.tab, results='asis', echo=FALSE}
 library(knitr)
@@ -51,10 +58,12 @@ kable(prob2.tab, format = "markdown")
 
 ```
 
-*** =left
+*** =right
+
+<font color="red">Modelagem</font> »
 <br>
 <br>
-<p style="font-size:12px">
+<p style="font-size:13px">
 (P.L.)
 $$
 \begin{equation}
@@ -69,9 +78,9 @@ $$
 $$
 </p>
 
-*** =right
 <br>
 <br>
+
 <p style="font-size:12px">
 (P.L.) - forma padrão
 $$
@@ -94,6 +103,9 @@ $$
 
 *** =left
 <!-- controlando o tamnho da fonte em css para html5 -->
+<br>
+<br>
+<br>
 <p style="font-size:17px">
 (P.D.) 
 $$
@@ -160,7 +172,7 @@ $$
         1
       \end{pmatrix}
       - (60 + \Delta) \geq 0
-      \rightarrow \Delta \leq 40
+      \rightarrow \Delta \leq -40
 \end{equation}
 $$
 
@@ -395,13 +407,18 @@ $$
 <font color="red">Estrutura do novo problema</font> »
 <br>
 <p style="font-size:15px">
-(P.L.) 
-$$Max Z = 60x_1 + 100x_2 + 80x_3 + 100x_p$$
-s.a. 
-$$6x_1 + 8x_2 + 10x_3 + 10x_p \leq 5000 $$
-$$100x_1 + 150x_2 + 120x_3 + 10x_p \leq 80000 $$
-$$x_1 + x_2 + x_3 +x_p \leq 500 $$
-$$x_i \geq 0, i=1,2,3,p $$
+(P.L.)
+$$
+\begin{equation}
+   \begin{array}{*{4}{z}}         % {zzzr} works too
+      Max Z & = 60x_1 & +100x_2 & +80x_3 & + 100x_p & &\\
+      s.a.& 6x_1 & +8x_2 & +10x_3 & +10x_p & \leq & 5000\\
+      & 100x_1 & +150x_2 & +120x_3 & + 10x_p & \leq & 80000\\
+      & x_1 & +x_2 & +x_3 & +x_p & \leq & 500\\
+      & x_i \geq 0 & i=1,2,3,p
+   \end{array}
+\end{equation}
+$$
 </p>
 
 <br>
@@ -451,10 +468,11 @@ $$
 
 ## Slide 11 - Acréscimo de atividade
 
-<font color="red">Novo tablô e solução</font>/ »
+<font color="red">Novo tablô e solução</font> »
 <br>
 
-```{r nv_xp.tab, results='asis', echo=FALSE}
+```{r nv_xp.tab, results='asis',  echo=FALSE}
+# se a tabela nao atualizar, colocar depois um echo = TRUE e depois voltar para FALSE
 library(knitr)
 kable(nv_xp.tab, format = "markdown")
 
@@ -471,7 +489,7 @@ kable(ot_xp.tab, format = "markdown")
 --- .class #id 
 
 ## Slide 12 - Acréscimo de restrição
-<font color="red">Novo (P.L.) e ajustes</font>/ »
+<font color="red">Novo (P.L.) e ajustes</font> »
 <br>
 
 $$
@@ -525,4 +543,17 @@ $$ \frac{\partial z^*}{\partial b_3} = \lambda_3^* = 100$$
 
 ---
 
-## OBRIGADO!!!!
+## Animação/ Resumo
+
+```{r echo = F, results = 'asis', message = F}
+require(googleVis)
+library(slidifyLibraries)
+#suppressPackageStartupMessages(library(googleVis))
+M1 = gvisMotionChart(gVis.tab,idvar="var", timevar=c("modif"))
+print(M1, tag = "chart")
+```
+
+--- .class #id
+
+## Próximo: Questão 2[1.7] ...
+
