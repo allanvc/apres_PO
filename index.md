@@ -98,8 +98,6 @@ $$
 *** =left
 <!-- controlando o tamnho da fonte em css para html5 -->
 <br>
-<br>
-<br>
 <p style="font-size:17px">
 (P.D.) 
 $$
@@ -118,7 +116,7 @@ $$
 
 *** =right
 <br>
-<p><center><img src="./assets/img/arrendamento2.png" align="middle">
+<p><center><img src="./assets/img/arrendamento1.png" align="middle">
 </center></p>
 
 --- &twocol 
@@ -196,16 +194,16 @@ $$
 <br>
 
 *** =left
-<p><img src="./assets/img/21sens_c1_sol-jj.jpg" align="middle">
+<p><center><img src="./assets/img/21sens_c1_sol-jj.jpg" align="middle">
 <!--- algumas img .PNG davam problema - foi resolvido editando no paint e salbvando em .jpg)--->
-</p>
+</center></p>
 
 *** =right
 <!--- se nao colocar o sinal de igual proximo ao right (ex: = right) nao funciona --->
 <br>
 <br>
-<p><img src="./assets/img/trigo1.png" align="middle">
-</p>
+<p><center><img src="./assets/img/trigo1.png" align="middle">
+</center></p>
 <!---![width](./assets/img/21sens_c1_sol-j.png)--->
 
 
@@ -281,8 +279,9 @@ $$
 </p>
 
 *** =right
-<p><img src="./assets/img/custo_empregado.png" align="top">
-</p>
+
+<p><center><img src="./assets/img/custo_empregado.png" align="top">
+</center></p>
 
 --- .class #id 
 
@@ -385,17 +384,22 @@ $$
 </p>
 
 *** =right
-<p><img src="./assets/img/crise1.png" align="top">
-</p>
+<p><center><img src="./assets/img/crise1.png" align="top">
+</center></p>
 
 
---- .class #id 
+--- &twocol 
 
 ## Slide 9 - Cont. Alteração Parâmetro "b"
 
-
+*** =left
 ![width](./assets/img/23sens_b_sol.png)
 
+*** =right
+<br>
+<br>
+<p><center><img src="./assets/img/soja2.png" align="top">
+</center></p>
 
 --- &twocol
 
