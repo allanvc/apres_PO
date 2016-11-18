@@ -475,21 +475,21 @@ $$
 <br>
 
 
-|Base.Var |  x1| x2|  x3| x4| x5|   x6|xp   |   RHS|
-|:--------|---:|--:|---:|--:|--:|----:|:----|-----:|
-|Z        |  40|  0|  20|  0|  0|  100|-50* | 50000|
-|x4       |  -2|  0|   2|  1|  0|   -8|2    |  1000|
-|x5       | -50|  0| -30|  0|  1| -150|-140 |  5000|
-|x2       |   1|  1|   1|  0|  0|    1|1    |   500|
+|Base.Var |  x1| x2|  x3|xp   | x4| x5|   x6|   RHS|
+|:--------|---:|--:|---:|:----|--:|--:|----:|-----:|
+|Z        |  40|  0|  20|-50* |  0|  0|  100| 50000|
+|x4       |  -2|  0|   2|2    |  1|  0|   -8|  1000|
+|x5       | -50|  0| -30|-140 |  0|  1| -150|  5000|
+|x2       |   1|  1|   1|1    |  0|  0|    1|   500|
 <br>
 
 
-|Base.Var | x1|  x2|  x3| x4| x5|  x6| xp|   RHS|
-|:--------|--:|---:|---:|--:|--:|---:|--:|-----:|
-|Z        | 90|  50|  70|  0|  0| 150|  0| 75000|
-|x4       | -4|  -2|   0|  1|  0| -10|  0|     0|
-|x5       | 90| 140| 110|  0|  1| -10|  0| 75000|
-|xp       |  1|   1|   1|  0|  0|   1|  1|   500|
+|Base.Var | x1|  x2|  x3| xp| x4| x5|  x6|   RHS|
+|:--------|--:|---:|---:|--:|--:|--:|---:|-----:|
+|Z        | 90|  50|  70|  0|  0|  0| 150| 75000|
+|x4       | -4|  -2|   0|  0|  1|  0| -10|     0|
+|x5       | 90| 140| 110|  0|  0|  1| -10| 75000|
+|xp       |  1|   1|   1|  1|  0|  0|   1|   500|
 
 
 --- .class #id 
@@ -558,14 +558,14 @@ $$ \frac{\partial z^*}{\partial b_3} = \lambda_3^* = 100$$
 ## Animação/ Resumo
 
 <!-- MotionChart generated in R 3.3.0 by googleVis 0.5.10 package -->
-<!-- Tue Nov 15 04:28:18 2016 -->
+<!-- Fri Nov 18 15:34:58 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID287c7b2b5b88 () {
+function gvisDataMotionChartID1e3449e2656e () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -848,15 +848,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID287c7b2b5b88() {
-var data = gvisDataMotionChartID287c7b2b5b88();
+function drawChartMotionChartID1e3449e2656e() {
+var data = gvisDataMotionChartID1e3449e2656e();
 var options = {};
 options["width"] =    600;
 options["height"] =    500;
 options["state"] = "";
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID287c7b2b5b88')
+    document.getElementById('MotionChartID1e3449e2656e')
     );
     chart.draw(data,options);
     
@@ -880,9 +880,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID287c7b2b5b88);
+callbacks.push(drawChartMotionChartID1e3449e2656e);
 })();
-function displayChartMotionChartID287c7b2b5b88() {
+function displayChartMotionChartID1e3449e2656e() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -906,11 +906,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID287c7b2b5b88"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID1e3449e2656e"></script>
  
 <!-- divChart -->
   
-<div id="MotionChartID287c7b2b5b88" 
+<div id="MotionChartID1e3449e2656e" 
   style="width: 600; height: 500;">
 </div>
 

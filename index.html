@@ -699,10 +699,10 @@ $$
 <th align="right">x1</th>
 <th align="right">x2</th>
 <th align="right">x3</th>
+<th align="left">xp</th>
 <th align="right">x4</th>
 <th align="right">x5</th>
 <th align="right">x6</th>
-<th align="left">xp</th>
 <th align="right">RHS</th>
 </tr>
 </thead><tbody>
@@ -711,10 +711,10 @@ $$
 <td align="right">40</td>
 <td align="right">0</td>
 <td align="right">20</td>
+<td align="left">-50*</td>
 <td align="right">0</td>
 <td align="right">0</td>
 <td align="right">100</td>
-<td align="left">-50*</td>
 <td align="right">50000</td>
 </tr>
 <tr>
@@ -722,10 +722,10 @@ $$
 <td align="right">-2</td>
 <td align="right">0</td>
 <td align="right">2</td>
+<td align="left">2</td>
 <td align="right">1</td>
 <td align="right">0</td>
 <td align="right">-8</td>
-<td align="left">2</td>
 <td align="right">1000</td>
 </tr>
 <tr>
@@ -733,10 +733,10 @@ $$
 <td align="right">-50</td>
 <td align="right">0</td>
 <td align="right">-30</td>
+<td align="left">-140</td>
 <td align="right">0</td>
 <td align="right">1</td>
 <td align="right">-150</td>
-<td align="left">-140</td>
 <td align="right">5000</td>
 </tr>
 <tr>
@@ -744,10 +744,10 @@ $$
 <td align="right">1</td>
 <td align="right">1</td>
 <td align="right">1</td>
+<td align="left">1</td>
 <td align="right">0</td>
 <td align="right">0</td>
 <td align="right">1</td>
-<td align="left">1</td>
 <td align="right">500</td>
 </tr>
 </tbody></table>
@@ -760,10 +760,10 @@ $$
 <th align="right">x1</th>
 <th align="right">x2</th>
 <th align="right">x3</th>
+<th align="right">xp</th>
 <th align="right">x4</th>
 <th align="right">x5</th>
 <th align="right">x6</th>
-<th align="right">xp</th>
 <th align="right">RHS</th>
 </tr>
 </thead><tbody>
@@ -774,8 +774,8 @@ $$
 <td align="right">70</td>
 <td align="right">0</td>
 <td align="right">0</td>
-<td align="right">150</td>
 <td align="right">0</td>
+<td align="right">150</td>
 <td align="right">75000</td>
 </tr>
 <tr>
@@ -783,10 +783,10 @@ $$
 <td align="right">-4</td>
 <td align="right">-2</td>
 <td align="right">0</td>
+<td align="right">0</td>
 <td align="right">1</td>
 <td align="right">0</td>
 <td align="right">-10</td>
-<td align="right">0</td>
 <td align="right">0</td>
 </tr>
 <tr>
@@ -795,9 +795,9 @@ $$
 <td align="right">140</td>
 <td align="right">110</td>
 <td align="right">0</td>
+<td align="right">0</td>
 <td align="right">1</td>
 <td align="right">-10</td>
-<td align="right">0</td>
 <td align="right">75000</td>
 </tr>
 <tr>
@@ -805,9 +805,9 @@ $$
 <td align="right">1</td>
 <td align="right">1</td>
 <td align="right">1</td>
-<td align="right">0</td>
-<td align="right">0</td>
 <td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
 <td align="right">1</td>
 <td align="right">500</td>
 </tr>
@@ -1022,14 +1022,14 @@ $$
   <article data-timings="">
     <!-- MotionChart generated in R 3.3.0 by googleVis 0.5.10 package -->
 
-<!-- Tue Nov 15 04:28:18 2016 -->
+<!-- Fri Nov 18 15:34:58 2016 -->
 
 <!-- jsHeader -->
 
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID287c7b2b5b88 () {
+function gvisDataMotionChartID1e3449e2656e () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -1312,15 +1312,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID287c7b2b5b88() {
-var data = gvisDataMotionChartID287c7b2b5b88();
+function drawChartMotionChartID1e3449e2656e() {
+var data = gvisDataMotionChartID1e3449e2656e();
 var options = {};
 options["width"] =    600;
 options["height"] =    500;
 options["state"] = "";
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID287c7b2b5b88')
+    document.getElementById('MotionChartID1e3449e2656e')
     );
     chart.draw(data,options);
     
@@ -1344,9 +1344,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID287c7b2b5b88);
+callbacks.push(drawChartMotionChartID1e3449e2656e);
 })();
-function displayChartMotionChartID287c7b2b5b88() {
+function displayChartMotionChartID1e3449e2656e() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -1372,12 +1372,12 @@ callbacks.shift()();
 
 <!-- jsChart -->  
 
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID287c7b2b5b88"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID1e3449e2656e"></script>
  
 
 <!-- divChart -->
 
-<div id="MotionChartID287c7b2b5b88" 
+<div id="MotionChartID1e3449e2656e" 
   style="width: 600; height: 500;">
 </div>
 
